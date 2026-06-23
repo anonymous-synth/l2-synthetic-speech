@@ -1,34 +1,200 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>L2 Speech Examples</title>
+<meta charset="utf-8">
+<title>L2 Speech Generation Examples</title>
+
+<style>
+
+body {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+}
+
+.example {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.box {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.audio-box {
+    text-align: center;
+}
+
+.synthetic {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.arrow {
+    font-size: 28px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.text-block {
+    white-space: pre-wrap;
+}
+
+audio {
+    width: 100%;
+}
+
+.level-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>L2 Speech Examples</h1>
+<h1>L2 Speech Generation Examples</h1>
 
-<h2>Example 1</h2>
-
-<p><b>Original written response</b></p>
 <p>
-This is the original written text...
+This page shows examples from our synthetic speech pipeline.
+For each CEFR level, we present real spoken responses, real written responses,
+speechified versions, and synthetic speech generated via TTS.
 </p>
 
-<p><b>Speechified text</b></p>
-<p>
-This is the speechified version...
-</p>
+<!-- ===================== A2 ===================== -->
+<div class="example">
 
-<p><b>Real speech</b></p>
-<audio controls>
-    <source src="audio/real_001.mp3" type="audio/mpeg">
-</audio>
+<div class="level-title">A2</div>
 
-<p><b>Synthetic speech</b></p>
-<audio controls>
-    <source src="audio/syn_001.mp3" type="audio/mpeg">
-</audio>
+<div class="grid">
+
+    <div class="box audio-box">
+        <h3>Real Spoken</h3>
+        <audio controls>
+            <source src="audio/a2_real.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="box">
+        <h3>Real Written</h3>
+        <div class="text-block">
+        INSERT A2 WRITTEN TEXT HERE
+        </div>
+
+        <hr>
+
+        <h3>Speechified Written</h3>
+        <div class="text-block">
+        INSERT A2 SPEECHIFIED TEXT HERE
+        </div>
+    </div>
+
+</div>
+
+<div class="synthetic">
+    <div class="arrow">↓ Synthetic ↓</div>
+    <audio controls>
+        <source src="audio/a2_synthetic.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+</div>
+
+<!-- ===================== B2 ===================== -->
+<div class="example">
+
+<div class="level-title">B2</div>
+
+<div class="grid">
+
+    <div class="box audio-box">
+        <h3>Real Spoken</h3>
+        <audio controls>
+            <source src="audio/b2_real.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="box">
+        <h3>Real Written</h3>
+        <div class="text-block">
+        INSERT B2 WRITTEN TEXT HERE
+        </div>
+
+        <hr>
+
+        <h3>Speechified Written</h3>
+        <div class="text-block">
+        INSERT B2 SPEECHIFIED TEXT HERE
+        </div>
+    </div>
+
+</div>
+
+<div class="synthetic">
+    <div class="arrow">↓ Synthetic ↓</div>
+    <audio controls>
+        <source src="audio/b2_synthetic.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+</div>
+
+<!-- ===================== C2 ===================== -->
+<div class="example">
+
+<div class="level-title">C2</div>
+
+<div class="grid">
+
+    <div class="box audio-box">
+        <h3>Real Spoken</h3>
+        <audio controls>
+            <source src="audio/c2_real.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="box">
+        <h3>Real Written</h3>
+        <div class="text-block">
+        INSERT C2 WRITTEN TEXT HERE
+        </div>
+
+        <hr>
+
+        <h3>Speechified Written</h3>
+        <div class="text-block">
+        INSERT C2 SPEECHIFIED TEXT HERE
+        </div>
+    </div>
+
+</div>
+
+<div class="synthetic">
+    <div class="arrow">↓ Synthetic ↓</div>
+    <audio controls>
+        <source src="audio/c2_synthetic.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+</div>
 
 </body>
 </html>
